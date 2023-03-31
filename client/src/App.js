@@ -1,24 +1,20 @@
-import logo from './logo.svg';
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import About from './components/About';
+import Projects from './components/Projects';
+import Contacts from './components/Contacts';
+import Footer from './components/Footer';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-      <a href="https://ddharianto.github.io/react-table/">React Table</a>
+    <div>
+      <Navbar />
+      <Hero />
+      <About />
+      <Projects />
+      <Contacts />
+      <Footer />
     </div>
   );
 }
