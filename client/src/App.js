@@ -8,7 +8,7 @@ import './App.css';
 
 function App() {
   return (
-    <div>
+    <div style={{ padding: 0, margin: 0 }}>
       <Navbar />
       <Hero />
       <About />

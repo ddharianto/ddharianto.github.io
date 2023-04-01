@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
   Box,
   Stack,
@@ -7,9 +7,14 @@ import {
   Link,
   Container,
   Typography,
+  useMediaQuery,
+  Menu,
+  MenuItem,
+  MenuList,
 } from '@mui/material';
 import Tooltip, { tooltipClasses } from '@mui/material/Tooltip';
-import { styled } from '@mui/material/styles';
+import MenuIcon from '@mui/icons-material/Menu';
+import { styled, useTheme } from '@mui/material/styles';
 
 const CustomTooltip = styled(({ className, ...props }) => (
   <Tooltip {...props} arrow classes={{ popper: className }} />
@@ -23,6 +28,18 @@ const CustomTooltip = styled(({ className, ...props }) => (
 }));
 
 const Navbar = () => {
+  const [anchorEl, setAnchorEl] = useState(null);
+  const theme = useTheme();
+  const lgUp = useMediaQuery(theme.breakpoints.down('md'));
+  const open = Boolean(anchorEl);
+
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+  const handleClose = (el) => {
+    setAnchorEl(null);
+  };
+
   return (
     <Box
       component="header"
@@ -47,7 +64,7 @@ const Navbar = () => {
           }}
         >
           <Stack alignItems="center" direction="row" spacing={2}>
-            <Link href="/" underline="none">
+            <Link href="#" underline="none">
               <Typography
                 color={'white'}
                 variant={'h5'}
@@ -58,50 +75,104 @@ const Navbar = () => {
             </Link>
           </Stack>
           <Stack alignItems="center" direction="row" spacing={5}>
-            <CustomTooltip title="About Me">
-              <Link href="#about" underline="none">
-                <Typography
-                  color={'white'}
-                  variant={'h6'}
-                  sx={{ fontWeight: 'bold' }}
+            {lgUp ? (
+              <>
+                <IconButton onClick={handleClick}>
+                  <SvgIcon fontSize="large" sx={{ color: 'white' }}>
+                    <MenuIcon />
+                  </SvgIcon>
+                </IconButton>
+                <Menu
+                  id="basic-menu"
+                  anchorEl={anchorEl}
+                  open={open}
+                  onClose={handleClose}
+                  MenuListProps={{
+                    'aria-labelledby': 'basic-button',
+                  }}
                 >
-                  {'about.'}
-                </Typography>
-              </Link>
-            </CustomTooltip>
-            <CustomTooltip title="My Projects">
-              <Link href="#projects" underline="none">
-                <Typography
-                  color={'white'}
-                  variant={'h6'}
-                  sx={{ fontWeight: 'bold' }}
-                >
-                  {'projects.'}
-                </Typography>
-              </Link>
-            </CustomTooltip>
-            <CustomTooltip title="Contact Me">
-              <Link href="#contacts" underline="none">
-                <Typography
-                  color={'white'}
-                  variant={'h6'}
-                  sx={{ fontWeight: 'bold' }}
-                >
-                  {'contacts.'}
-                </Typography>
-              </Link>
-            </CustomTooltip>
-            <CustomTooltip title="Download CV">
-              <Link href="#" underline="none">
-                <Typography
-                  color={'white'}
-                  variant={'h6'}
-                  sx={{ fontWeight: 'bold' }}
-                >
-                  {'download.'}
-                </Typography>
-              </Link>
-            </CustomTooltip>
+                  <MenuList
+                    disablePadding
+                    dense
+                    sx={{
+                      px: '8px',
+                      py: 0,
+                      '& > *': {
+                        borderRadius: 1,
+                      },
+                    }}
+                  >
+                    <MenuItem onClick={handleClose}>
+                      <Link href="#about" underline="none" color="inherit">
+                        About{' '}
+                      </Link>
+                    </MenuItem>
+                    <MenuItem onClick={handleClose}>
+                      <Link href="#projects" underline="none" color="inherit">
+                        Projects
+                      </Link>
+                    </MenuItem>
+                    <MenuItem onClick={handleClose}>
+                      <Link href="#contacts" underline="none" color="inherit">
+                        Contacts
+                      </Link>
+                    </MenuItem>
+                    <MenuItem onClick={handleClose}>
+                      <Link href="#" underline="none" color="inherit">
+                        Download CV
+                      </Link>
+                    </MenuItem>
+                  </MenuList>
+                </Menu>
+              </>
+            ) : (
+              <>
+                <CustomTooltip title="About Me">
+                  <Link href="#about" underline="none">
+                    <Typography
+                      color={'white'}
+                      variant={'h6'}
+                      sx={{ fontWeight: 'bold' }}
+                    >
+                      {'about.'}
+                    </Typography>
+                  </Link>
+                </CustomTooltip>
+                <CustomTooltip title="My Projects">
+                  <Link href="#projects" underline="none">
+                    <Typography
+                      color={'white'}
+                      variant={'h6'}
+                      sx={{ fontWeight: 'bold' }}
+                    >
+                      {'projects.'}
+                    </Typography>
+                  </Link>
+                </CustomTooltip>
+                <CustomTooltip title="Contact Me">
+                  <Link href="#contacts" underline="none">
+                    <Typography
+                      color={'white'}
+                      variant={'h6'}
+                      sx={{ fontWeight: 'bold' }}
+                    >
+                      {'contacts.'}
+                    </Typography>
+                  </Link>
+                </CustomTooltip>
+                <CustomTooltip title="Download CV">
+                  <Link href="#" underline="none">
+                    <Typography
+                      color={'white'}
+                      variant={'h6'}
+                      sx={{ fontWeight: 'bold' }}
+                    >
+                      {'download.'}
+                    </Typography>
+                  </Link>
+                </CustomTooltip>
+              </>
+            )}
           </Stack>
         </Stack>
       </Container>
