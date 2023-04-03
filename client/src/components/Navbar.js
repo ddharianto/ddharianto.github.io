@@ -64,7 +64,7 @@ const Navbar = () => {
           }}
         >
           <Stack alignItems="center" direction="row" spacing={2}>
-            <Link href="#" underline="none">
+            <Link href="/" underline="none">
               <Typography
                 color={'white'}
                 variant={'h5'}
@@ -84,12 +84,10 @@ const Navbar = () => {
                 </IconButton>
                 <Menu
                   id="basic-menu"
+                  variant="selectedMenu"
                   anchorEl={anchorEl}
                   open={open}
                   onClose={handleClose}
-                  MenuListProps={{
-                    'aria-labelledby': 'basic-button',
-                  }}
                 >
                   <MenuList
                     disablePadding
@@ -138,7 +136,7 @@ const Navbar = () => {
                     </Typography>
                   </Link>
                 </CustomTooltip>
-                <CustomTooltip title="My Projects">
+                <CustomTooltip title="My Recent Projects">
                   <Link href="#projects" underline="none">
                     <Typography
                       color={'white'}
