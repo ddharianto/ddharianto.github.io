@@ -5,12 +5,16 @@ import html5 from './img/html5.svg';
 import css3 from './img/css3.svg';
 import materialui from './img/materialui.svg';
 import mongodb from './img/mongodb.svg';
+import mysql from './img/mysql.svg';
 import php from './img/php.svg';
 import vscode from './img/vscode.svg';
 import express from './img/express.svg';
+import bootstrap from './img/bootstrap.svg';
+import python from './img/python.svg';
 import avatar from './img/avatar.jpg';
 import react_table from './img/react_table_exp.png';
 import login_regex from './img/login_regex_exp.png';
+import portfolio from './img/portfolio_exp.png';
 
 export const tech_stack = [
   {
@@ -20,6 +24,10 @@ export const tech_stack = [
   {
     name: 'Node.js',
     icon: nodejs,
+  },
+  {
+    name: 'Express',
+    icon: express,
   },
   {
     name: 'React',
@@ -34,6 +42,10 @@ export const tech_stack = [
     icon: css3,
   },
   {
+    name: 'Bootstrap',
+    icon: bootstrap,
+  },
+  {
     name: 'Material UI',
     icon: materialui,
   },
@@ -42,16 +54,20 @@ export const tech_stack = [
     icon: mongodb,
   },
   {
+    name: 'MySQL',
+    icon: mysql,
+  },
+  {
     name: 'PHP',
     icon: php,
   },
   {
-    name: 'VS Code',
-    icon: vscode,
+    name: 'Python',
+    icon: python,
   },
   {
-    name: 'Express',
-    icon: express,
+    name: 'VS Code',
+    icon: vscode,
   },
 ];
 
@@ -66,6 +82,14 @@ export const about_me = {
 };
 
 export const projects = [
+  {
+    name: 'Portfolio',
+    image: portfolio,
+    desc: `My personal portfolio designed in Figma and React with Material Ui`,
+    tags: ['react', 'figma', 'material-ui-v5', 'css-3'],
+    src: 'https://github.com/ddharianto/ddharianto.github.io/',
+    demo: 'https://ddharianto.github.io/',
+  },
   {
     name: 'React-Table with Material UI',
     image: react_table,

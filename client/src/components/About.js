@@ -7,8 +7,20 @@ import {
   Avatar,
   useMediaQuery,
 } from '@mui/material';
-import { useTheme } from '@mui/material/styles';
+import Tooltip, { tooltipClasses } from '@mui/material/Tooltip';
+import { styled, useTheme } from '@mui/material/styles';
 import { tech_stack, about_me } from '../assets';
+
+const CustomTooltip = styled(({ className, ...props }) => (
+  <Tooltip {...props} arrow classes={{ popper: className }} />
+))(({ theme }) => ({
+  [`& .${tooltipClasses.arrow}`]: {
+    color: '#004699',
+  },
+  [`& .${tooltipClasses.tooltip}`]: {
+    backgroundColor: '#004699',
+  },
+}));
 
 const About = () => {
   const theme = useTheme();
@@ -105,42 +117,53 @@ const About = () => {
           <div className="logos-slide">
             {tech_stack.map((tech, index) => {
               return (
-                <Box
-                  id="img"
-                  key={index}
-                  component="img"
-                  alt={tech.name}
-                  src={tech.icon}
-                  sx={{
-                    height: 100,
-                    color: tech.name === 'Visual Studio' && '#0078d7',
-                    filter: !mdDown && 'grayscale(100%)',
-                    '&:hover': {
-                      filter: 'none',
-                    },
-                  }}
-                />
+                <CustomTooltip
+                  className="tooltip"
+                  title={tech.name}
+                  followCursor={true}
+                >
+                  <Box
+                    id="img"
+                    key={index}
+                    component="img"
+                    alt={tech.name}
+                    src={tech.icon}
+                    sx={{
+                      height: 100,
+                      color: tech.name === 'Visual Studio' && '#0078d7',
+                      filter: !mdDown && 'grayscale(100%)',
+                      '&:hover': {
+                        filter: 'none',
+                      },
+                    }}
+                  />
+                </CustomTooltip>
               );
             })}
           </div>
           <div className="logos-slide">
             {tech_stack.map((tech, index) => {
               return (
-                <Box
-                  id="img"
+                <CustomTooltip
                   key={index}
-                  component="img"
-                  alt={tech.name}
-                  src={tech.icon}
-                  sx={{
-                    height: 100,
-                    color: tech.name === 'Visual Studio' && '#0078d7',
-                    filter: !mdDown && 'grayscale(100%)',
-                    '&:hover': {
-                      filter: 'none',
-                    },
-                  }}
-                />
+                  title={tech.name}
+                  followCursor={true}
+                >
+                  <Box
+                    id="img"
+                    component="img"
+                    alt={tech.name}
+                    src={tech.icon}
+                    sx={{
+                      height: 100,
+                      color: tech.name === 'Visual Studio' && '#0078d7',
+                      filter: !mdDown && 'grayscale(100%)',
+                      '&:hover': {
+                        filter: 'none',
+                      },
+                    }}
+                  />
+                </CustomTooltip>
               );
             })}
           </div>

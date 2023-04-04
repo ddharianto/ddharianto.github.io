@@ -31,6 +31,7 @@ const chips_color = [
 const Projects = () => {
   const theme = useTheme();
   const mdDown = useMediaQuery(theme.breakpoints.down('md'));
+  const smDown = useMediaQuery(theme.breakpoints.down('sm'));
 
   return (
     <Box
@@ -61,7 +62,6 @@ const Projects = () => {
           spacing={4}
           direction="row"
           justifyContent="center"
-          alignItems="center"
           sx={{ mt: 5 }}
         >
           <Grid
@@ -69,19 +69,25 @@ const Projects = () => {
             item
             direction="row"
             justifyContent="center"
-            alignItems="center"
             spacing={2}
           >
             {projects.map((project, index) => {
               return (
-                <Grid item key={index} xs={12} md={4} lg={4}>
-                  <Card sx={{ maxWidth: 345, position: 'relative' }}>
+                <Grid item key={index} xs={smDown ? 12 : 8} md={6} lg={4}>
+                  <Card
+                    sx={{
+                      maxWidth: mdDown ? 500 : 350,
+                      minHeight: 400,
+                      position: 'relative',
+                      backgroundColor: '#b39ddb',
+                    }}
+                  >
                     <CardMedia
                       component="img"
                       alt={project.name}
                       image={project.image}
                       sx={{
-                        height: 200,
+                        height: mdDown ? 350 : 200,
                       }}
                     />
                     <Stack
@@ -96,7 +102,7 @@ const Projects = () => {
                           rel="noopener"
                           size="small"
                           startIcon={<VisibilityIcon />}
-                          sx={{ color: '#826C00' }}
+                          sx={{ color: '#00316B' }}
                         >
                           Demo
                         </Button>
@@ -114,7 +120,7 @@ const Projects = () => {
                         source code
                       </Button>
                     </Stack>
-                    <CardContent>
+                    <CardContent sx={{ minHeight: 160 }}>
                       <Typography gutterBottom variant="h5" component="div">
                         {project.name}
                       </Typography>
@@ -125,6 +131,7 @@ const Projects = () => {
                     <CardActions>
                       <Grid
                         container
+                        item
                         wrap="wrap"
                         justifyContent={'center'}
                         spacing={1}
@@ -136,7 +143,7 @@ const Projects = () => {
                               <Chip
                                 label={tag}
                                 color={chips_color[index]}
-                                variant="outlined"
+                                variant="filled"
                               />
                             </Grid>
                           );
@@ -148,7 +155,7 @@ const Projects = () => {
               );
             })}
           </Grid>
-          <Grid item sx={{ mt: 10 }}>
+          <Grid item sx={{ mt: 2 }}>
             <Button
               size="small"
               href={'https://github.com/ddharianto?tab=repositories'}
