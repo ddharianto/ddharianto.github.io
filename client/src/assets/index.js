@@ -11,7 +11,12 @@ import vscode from './img/vscode.svg';
 import express from './img/express.svg';
 import bootstrap from './img/bootstrap.svg';
 import python from './img/python.svg';
+import github from './img/github.svg';
+import gmail from './img/gmail.svg';
+// import instagram from './img/instagram.svg';
+import linkedin from './img/linkedin.svg';
 import avatar from './img/avatar.jpg';
+import phone from './img/phone.png';
 import react_table from './img/react_table_exp.png';
 import login_regex from './img/login_regex_exp.png';
 import portfolio from './img/portfolio_exp.png';
@@ -108,5 +113,32 @@ export const projects = [
     tags: ['php', 'regex', 'mysql', 'bootstrap'],
     src: 'https://github.com/ddharianto/login-form-with-regex',
     demo: '',
+  },
+];
+
+export const contacts = [
+  {
+    avatar: github,
+    name: 'github',
+    label: '/ddharianto',
+    src: 'https://github.com/ddharianto',
+  },
+  {
+    avatar: linkedin,
+    name: 'linkedin',
+    label: '/in/ddharianto/',
+    src: 'https://www.linkedin.com/in/ddharianto/',
+  },
+  {
+    avatar: gmail,
+    name: 'email',
+    label: 'ddharianto11@gmail.com',
+    src: 'mailto:ddharianto11@gmail.com',
+  },
+  {
+    avatar: phone,
+    name: 'phone',
+    label: '(+62) 8211 4239 288',
+    src: 'tel:+6282114239288',
   },
 ];

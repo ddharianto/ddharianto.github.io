@@ -25,6 +25,7 @@ const CustomTooltip = styled(({ className, ...props }) => (
 const About = () => {
   const theme = useTheme();
   const mdDown = useMediaQuery(theme.breakpoints.down('md'));
+  const lgDown = useMediaQuery(theme.breakpoints.down('lg'));
 
   return (
     <Box
@@ -108,7 +109,7 @@ const About = () => {
           component="div"
           className="logos"
           sx={{
-            py: 20,
+            py: 10,
             overflow: 'hidden',
             whiteSpace: 'nowrap',
             position: 'relative',
@@ -121,17 +122,17 @@ const About = () => {
                   className="tooltip"
                   title={tech.name}
                   followCursor={true}
+                  key={index}
                 >
                   <Box
                     id="img"
-                    key={index}
                     component="img"
                     alt={tech.name}
                     src={tech.icon}
                     sx={{
                       height: 100,
                       color: tech.name === 'Visual Studio' && '#0078d7',
-                      filter: !mdDown && 'grayscale(100%)',
+                      filter: !lgDown && 'grayscale(100%)',
                       '&:hover': {
                         filter: 'none',
                       },
@@ -141,6 +142,8 @@ const About = () => {
               );
             })}
           </div>
+
+          {/* duplicate logos-slide div for smooth animation*/}
           <div className="logos-slide">
             {tech_stack.map((tech, index) => {
               return (
@@ -157,7 +160,7 @@ const About = () => {
                     sx={{
                       height: 100,
                       color: tech.name === 'Visual Studio' && '#0078d7',
-                      filter: !mdDown && 'grayscale(100%)',
+                      filter: !lgDown && 'grayscale(100%)',
                       '&:hover': {
                         filter: 'none',
                       },

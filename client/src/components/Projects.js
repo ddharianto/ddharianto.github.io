@@ -45,7 +45,7 @@ const Projects = () => {
         maxWidth="lg"
         sx={{
           textAlign: mdDown ? 'center' : 'left',
-          pt: 5,
+          pt: mdDown ? 10 : 15,
         }}
       >
         <Typography
@@ -157,12 +157,12 @@ const Projects = () => {
           </Grid>
           <Grid item sx={{ mt: 2 }}>
             <Button
-              size="small"
+              size="large"
               href={'https://github.com/ddharianto?tab=repositories'}
               target="_blank"
               rel="noopener"
               endIcon={<ArrowForwardIcon />}
-              sx={{ color: '#fff', textTransform: 'initial' }}
+              sx={{ color: '#fff', textTransform: 'initial', fontSize: 17 }}
             >
               See all projects on GitHub repository
             </Button>
