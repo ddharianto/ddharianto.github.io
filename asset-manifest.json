@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.9eb23f9f.css",
-    "main.js": "/static/js/main.cf0d5db9.js",
+    "main.css": "/static/css/main.63fffbaf.css",
+    "main.js": "/static/js/main.8dc94216.js",
     "static/js/787.c4e7f8f9.chunk.js": "/static/js/787.c4e7f8f9.chunk.js",
     "static/media/portfolio_exp.png": "/static/media/portfolio_exp.d66e154516ff65e5ed67.png",
     "static/media/avatar.jpg": "/static/media/avatar.eac50e53648e0b069a85.jpg",
@@ -15,18 +15,21 @@
     "static/media/react.svg": "/static/media/react.4e0c97009b885bfa75c5412262a46f5f.svg",
     "static/media/python.svg": "/static/media/python.849d0b2b5f1ec20f077dd267498bd536.svg",
     "static/media/bootstrap.svg": "/static/media/bootstrap.9d52c09ec3d831cca7244e06743aed7d.svg",
+    "static/media/gmail.svg": "/static/media/gmail.f1d96e640a9eb71dcab675359755a417.svg",
+    "static/media/github.svg": "/static/media/github.dc49a960a2d3c5a49c806f6188a7733b.svg",
     "static/media/javascript.svg": "/static/media/javascript.4c1b5332c1b1057928f6f06cf972c91c.svg",
     "static/media/css3.svg": "/static/media/css3.39769a8bd378bf410d6b381a8d88fa35.svg",
     "static/media/vscode.svg": "/static/media/vscode.3e91ebeb866625ec0bf6afdccff4020c.svg",
     "index.html": "/index.html",
     "static/media/html5.svg": "/static/media/html5.8664168d5bc90b1a24396f85aadbf623.svg",
+    "static/media/linkedin.svg": "/static/media/linkedin.ada11cda991129bc91b79d2c7cee1066.svg",
     "static/media/materialui.svg": "/static/media/materialui.87264df237ee700ba78bb58ff701a6d3.svg",
-    "main.9eb23f9f.css.map": "/static/css/main.9eb23f9f.css.map",
-    "main.cf0d5db9.js.map": "/static/js/main.cf0d5db9.js.map",
+    "main.63fffbaf.css.map": "/static/css/main.63fffbaf.css.map",
+    "main.8dc94216.js.map": "/static/js/main.8dc94216.js.map",
     "787.c4e7f8f9.chunk.js.map": "/static/js/787.c4e7f8f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9eb23f9f.css",
-    "static/js/main.cf0d5db9.js"
+    "static/css/main.63fffbaf.css",
+    "static/js/main.8dc94216.js"
   ]
 }
