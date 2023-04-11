@@ -20,6 +20,12 @@ import phone from './img/phone.png';
 import react_table from './img/react_table_exp.png';
 import login_regex from './img/login_regex_exp.png';
 import portfolio from './img/portfolio_exp.png';
+import cv_pdf from './cv_dede_harianto.pdf';
+
+export const cv = {
+  name: 'CV - Dede Harianto',
+  file: cv_pdf,
+};
 
 export const tech_stack = [
   {

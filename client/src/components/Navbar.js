@@ -15,6 +15,7 @@ import {
 import Tooltip, { tooltipClasses } from '@mui/material/Tooltip';
 import MenuIcon from '@mui/icons-material/Menu';
 import { styled, useTheme } from '@mui/material/styles';
+import { cv } from '../assets';
 
 const CustomTooltip = styled(({ className, ...props }) => (
   <Tooltip {...props} arrow classes={{ popper: className }} />
@@ -116,7 +117,12 @@ const Navbar = () => {
                       </Link>
                     </MenuItem>
                     <MenuItem onClick={handleClose}>
-                      <Link href="#" underline="none" color="inherit">
+                      <Link
+                        href={cv.file}
+                        download={cv.name}
+                        underline="none"
+                        color="inherit"
+                      >
                         Download CV
                       </Link>
                     </MenuItem>
@@ -159,7 +165,7 @@ const Navbar = () => {
                   </Link>
                 </CustomTooltip>
                 <CustomTooltip title="Download CV">
-                  <Link href="#" underline="none">
+                  <Link href={cv.file} download={cv.name} underline="none">
                     <Typography
                       color={'white'}
                       variant={'h6'}
