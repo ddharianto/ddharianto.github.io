@@ -20,6 +20,7 @@ import phone from './img/phone.png';
 import react_table from './img/react_table_exp.png';
 import login_regex from './img/login_regex_exp.png';
 import portfolio from './img/portfolio_exp.png';
+import muzykapp from './img/muzykapp_exp.png';
 import cv_pdf from './cv_dede_harianto.pdf';
 
 export const cv = {
@@ -93,6 +94,14 @@ export const about_me = {
 };
 
 export const projects = [
+  {
+    name: 'Muzyk App',
+    image: muzykapp,
+    desc: `Music App with fully functional music player and updated based on Shazam Api`,
+    tags: ['react', 'tailwind', 'redux', 'google OAuth', 'rapid-api'],
+    src: 'https://github.com/ddharianto/muzyk-app',
+    demo: 'https://muzyk.netlify.app/',
+  },
   {
     name: 'Portfolio',
     image: portfolio,
