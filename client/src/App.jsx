@@ -1,11 +1,25 @@
 import React from 'react';
 
+import {
+  Navbar,
+  Hero,
+  About,
+  Projects,
+  Experiences,
+  Contacts,
+  Footer,
+} from './components';
+
 const App = () => {
   return (
-    <div className="">
-      <h1 className="flex justify-center items-center text-3xl font-bold text-white underline">
-        Hello world!
-      </h1>
+    <div className="container bg-primary text-white">
+      <Navbar />
+      <Hero />
+      <About />
+      <Experiences />
+      <Projects />
+      <Contacts />
+      <Footer />
     </div>
   );
 };
