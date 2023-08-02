@@ -3,6 +3,7 @@ import React from 'react';
 import {
   Navbar,
   Hero,
+  Blur,
   About,
   Projects,
   Experiences,
@@ -12,9 +13,10 @@ import {
 
 const App = () => {
   return (
-    <div className="container bg-primary text-white">
+    <div className="flex-col flex">
       <Navbar />
       <Hero />
+      <Blur />
       <About />
       <Experiences />
       <Projects />

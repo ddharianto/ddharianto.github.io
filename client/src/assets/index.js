@@ -1,3 +1,16 @@
+import react from './react.svg';
+import hero_bg from './starry-night-sky.jpg';
+
+export { react, hero_bg };
+
+export const navbar = [
+  'about.',
+  'project.',
+  'experience.',
+  'contact.',
+  'download.',
+];
+
 export const cv = {
   name: 'CV - Dede Harianto',
   // file: cv_pdf,

@@ -10,6 +10,10 @@ export default {
       colors: {
         primary: '#330099',
       },
+
+      backgroundImage: {
+        hero: "url('/src/assets/starry-night-sky.jpg')",
+      },
     },
   },
   plugins: [],
