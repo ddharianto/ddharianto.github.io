@@ -11,8 +11,15 @@ const Navbar = () => {
         </a>
         <div className="flex justify-between gap-6">
           {navbar.map((item) => (
-            <a key={item} href="#" className="text-2xl font-bold">
-              {item}
+            <a
+              key={item.title}
+              href={item.href}
+              target={item?.target !== undefined ? item.target : '_self'}
+              className={`text-2xl font-bold ${
+                item.title === 'resume.' && 'underline decoration-flame'
+              }`}
+            >
+              {item.title}
             </a>
           ))}
         </div>

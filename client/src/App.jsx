@@ -3,7 +3,6 @@ import React from 'react';
 import {
   Navbar,
   Hero,
-  Blur,
   About,
   Projects,
   Experiences,
@@ -16,10 +15,9 @@ const App = () => {
     <div className="flex-col flex">
       <Navbar />
       <Hero />
-      <Blur />
       <About />
-      <Experiences />
       <Projects />
+      <Experiences />
       <Contacts />
       <Footer />
     </div>

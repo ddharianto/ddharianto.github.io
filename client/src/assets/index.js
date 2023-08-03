@@ -4,11 +4,11 @@ import hero_bg from './starry-night-sky.jpg';
 export { react, hero_bg };
 
 export const navbar = [
-  'about.',
-  'project.',
-  'experience.',
-  'contact.',
-  'download.',
+  { title: 'about.', href: '#about' },
+  { title: 'project.', href: '#project' },
+  { title: 'experience.', href: '#experience' },
+  { title: 'contact.', href: '#contact' },
+  { title: 'resume.', href: '/resume_ddharianto.pdf', target: '_blank' },
 ];
 
 export const cv = {
