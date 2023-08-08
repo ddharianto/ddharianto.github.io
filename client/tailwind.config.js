@@ -12,12 +12,25 @@ export default {
         raisin: '#2E282A',
         flame: '#E4572E',
       },
-
       backgroundImage: {
-        hero: "url('/src/assets/starry-night-sky.jpg')",
+        hero: "url('/src/assets/images/starry-night-sky.jpg')",
+      },
+      keyframes: {
+        bounce: {
+          '0%, 100%': {
+            transform: 'translateY(-25%)',
+            animationTimingFunction: 'cubic-bezier(0, 0, 1, 1)',
+          },
+          '50%': {
+            transform: 'translateY(0)',
+            animationTimingFunction: 'cubic-bezier(0, 0, 1, 1)',
+          },
+        },
       },
       animation: {
         ping_once: 'ping 0.5s linear',
+        bounceslow: 'bounce 6s linear infinite',
+        bounceslowdelay: 'bounce 6s 2s linear infinite',
         spinslow: 'spin 5s linear infinite',
         slideup: 'slideup 1s ease-in-out',
         slidedown: 'slidedown 1s ease-in-out',

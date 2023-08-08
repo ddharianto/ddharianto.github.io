@@ -1,7 +1,31 @@
-import react from './react.svg';
-import hero_bg from './starry-night-sky.jpg';
+import earth from './images/earth.jpg';
+import jupiter from './images/jupiter.jpg';
+import mars from './images/mars.jpg';
+import neptune from './images/neptune.jpg';
+import saturn from './images/saturn.jpg';
+import uranus from './images/uranus.jpg';
+import login_regex from './images/login_regex.png';
+import muzykapp from './images/muzykapp.png';
+import portfolio_v1 from './images/portfolio_v1.png';
+import react_table from './images/react_table.png';
 
-export { react, hero_bg };
+import {
+  javascript,
+  react,
+  redux,
+  figma,
+  materialui,
+  rapidapi,
+  reacttable,
+  php,
+  regex,
+  mysql,
+  bootstrap,
+} from './icons';
+
+// export { react, hero_bg, earth, jupiter, neptune, saturn, mars, uranus };
+
+// export const planetary_bg = [earth, jupiter, neptune, saturn, mars, uranus];
 
 export const navbar = [
   { title: 'about.', href: '#about' },
@@ -11,109 +35,54 @@ export const navbar = [
   { title: 'resume.', href: '/resume_ddharianto.pdf', target: '_blank' },
 ];
 
-export const cv = {
-  name: 'CV - Dede Harianto',
-  // file: cv_pdf,
-};
-
-export const tech_stack = [
-  {
-    name: 'Javascript',
-    //   icon: javascript,
-  },
-  {
-    name: 'Node.js',
-    //   icon: nodejs,
-  },
-  {
-    name: 'Express',
-    //   icon: express,
-  },
-  {
-    name: 'React',
-    //   icon: react,
-  },
-  {
-    name: 'HTML 5',
-    //   icon: html5,
-  },
-  {
-    name: 'CSS 3',
-    //   icon: css3,
-  },
-  {
-    name: 'Bootstrap',
-    //   icon: bootstrap,
-  },
-  {
-    name: 'Material UI',
-    //   icon: materialui,
-  },
-  {
-    name: 'MongoDB',
-    //   icon: mongodb,
-  },
-  {
-    name: 'MySQL',
-    //   icon: mysql,
-  },
-  {
-    name: 'PHP',
-    //   icon: php,
-  },
-  {
-    name: 'Python',
-    //   icon: python,
-  },
-  {
-    name: 'VS Code',
-    //   icon: vscode,
-  },
-];
-
-export const about_me = {
-  desc: `
-          I'm a web developer and mainly work with Javascript. 
-          Able to work as a front-end and back-end developer. 
-          I have experience with React, React Hooks, Material UI as a front-end and experience with Nodejs, RESTful API as a back-end developer. 
-          I'm a fast learner and very adaptable to a new environtment and new technologies. Looking forward to working with you!
-          `,
-  // avatar: avatar,
-};
-
 export const projects = [
   {
     name: 'Muzyk App',
-    //   image: muzykapp,
-    desc: `Music App with fully functional music player and updated based on Shazam Api`,
-    tags: ['react', 'tailwind', 'redux', 'google OAuth', 'rapid-api'],
+    image: muzykapp,
+    bg: jupiter,
+    bg_deg: 'rotate-[3deg]',
+    desc: `
+          A front-end music app using Tailwind as the main CSS styling framework and Redux for handling 
+          data/state returned from API such as Shazam API from RapidAPI.
+          `,
+    stack: [react, redux, rapidapi],
     src: 'https://github.com/ddharianto/muzyk-app',
     demo: 'https://muzyk.netlify.app/',
   },
   {
     name: 'Portfolio',
-    //   image: portfolio,
-    desc: `My personal portfolio designed in Figma and React with Material Ui`,
-    tags: ['react', 'figma', 'material-ui-v5', 'css-3'],
+    image: portfolio_v1,
+    bg: mars,
+    bg_deg: 'rotate-[25deg]',
+    desc: `
+          My personal portfolio designed in Figma and React with Material Ui
+          `,
+    stack: [react, figma, materialui],
     src: 'https://github.com/ddharianto/ddharianto.github.io/',
     demo: 'https://ddharianto.github.io/',
   },
   {
-    name: 'React-Table with Material UI',
-    //   image: react_table,
-    desc: `This is an example how to create a table using React-Table v7 and styled with Material UI v5`,
-    tags: ['react', 'react-table-v7', 'material-ui-v5'],
+    name: 'React-Table',
+    image: react_table,
+    bg: neptune,
+    bg_deg: 'rotate-[30deg]',
+    desc: `
+          An example of a full functioning table using React-Table v7 and styled with Material UI v5
+          `,
+    stack: [react, reacttable, materialui],
     src: 'https://github.com/ddharianto/react-table',
     demo: 'https://ddharianto.github.io/react-table/',
   },
   {
     name: 'Login Form with Regex',
-    //   image: login_regex,
+    image: login_regex,
+    bg: uranus,
+    bg_deg: 'rotate-[98deg]',
     desc: `
-            Displays basic login, registration, change password, and logout forms in the PHP programming language. 
+            Display basic login, registration, change password, and logout forms in the PHP programming language. 
             The login, registration and change password forms use regex so that users can submit entries that are adjusted by the system.
             `,
-    tags: ['php', 'regex', 'mysql', 'bootstrap'],
+    stack: [php, regex, mysql, bootstrap],
     src: 'https://github.com/ddharianto/login-form-with-regex',
     demo: '',
   },

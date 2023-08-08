@@ -23,7 +23,7 @@ const Hero = () => {
 
   return (
     <div
-      className="relative w-full flex md:items-center min-h-screen mb-8 bg-hero bg-cover bg-no-repeat bg-left"
+      className="relative w-full flex md:items-center min-h-screen mb-2 bg-hero bg-cover bg-no-repeat bg-left"
       id="home"
     >
       <div className="flex flex-col justify-center items-center gap-2 section-container">
@@ -32,6 +32,7 @@ const Hero = () => {
           <span ref={spanRef} />
         </p>
       </div>
+
       {/* transition */}
       <div className="absolute bottom-0 z-10">
         <div className="w-screen h-64 -bottom-[64px] py-8 bg-gradient-to-t from-primary"></div>
