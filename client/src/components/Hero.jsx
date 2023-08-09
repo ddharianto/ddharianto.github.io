@@ -23,10 +23,10 @@ const Hero = () => {
 
   return (
     <div
-      className="relative w-full flex md:items-center min-h-screen mb-2 bg-hero bg-cover bg-no-repeat bg-left"
+      className="relative w-full flex flex-col min-h-screen mb-2 bg-hero bg-cover bg-no-repeat bg-left"
       id="home"
     >
-      <div className="flex flex-col justify-center items-center gap-2 section-container">
+      <div className="flex flex-col justify-center items-center min-h-screen gap-2 section-container">
         <span className="text-5xl font-bold">Dede Harianto</span>
         <p className="text-3xl font-semibold">
           <span ref={spanRef} />

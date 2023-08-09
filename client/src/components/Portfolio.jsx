@@ -1,8 +1,8 @@
 import React, { Fragment } from 'react';
 
-import { projects, moon } from '../assets';
+import { portfolio, moon } from '../assets';
 
-const Projects = () => {
+const Portfolio = () => {
   return (
     <div className="relative w-full flex min-h-screen bg-raisin" id="project">
       <div className="w-full min-h-screen flex flex-col justify-center my-[100px] animate-slideup ">
@@ -13,11 +13,11 @@ const Projects = () => {
             className={`absolute w-[150px] h-[150px] rounded-full group-hover/planet:invisible`}
           />
           <h1 className="absolute m-auto bottom-[55px] font-bold bg-black/50 p-2 rounded-full">
-            My Projects
+            Portfolio
           </h1>
         </div>
         <div className="h-fit flex flex-wrap justify-center items-center my-[50px] gap-8 select-none">
-          {projects.map((el) => (
+          {portfolio.map((el) => (
             <div
               key={el.name}
               className="h-[500px] flex felx-col rounded-full my-20 mx-6 odd:animate-bounceslow even:animate-bounceslowdelay group/planet"
@@ -32,9 +32,7 @@ const Projects = () => {
                   <h1 className="max-w-[300px] text-2xl font-bold tracking-widest mb-4">
                     {el.name}
                   </h1>
-                  <h1 className="text-lg leading-tight line-clamp-5">
-                    {el.desc}
-                  </h1>
+                  <h1 className="text-lg leading-tight">{el.desc}</h1>
                 </div>
                 <a
                   href={el?.demo !== undefined ? el.demo : el.github}
@@ -76,4 +74,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default Portfolio;

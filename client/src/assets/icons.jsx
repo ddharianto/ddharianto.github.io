@@ -1,11 +1,11 @@
 import rapidapi_png from './images/rapidapi.png';
+import vite_png from './images/vite.png';
 
 export const javascript = (
   <img
     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
     width={48}
     height={48}
-    className="p-2 rounded-full backdrop-blur"
   />
 );
 export const react = (
@@ -13,7 +13,6 @@ export const react = (
     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
     width={48}
     height={48}
-    className="p-2 rounded-full backdrop-blur"
   />
 );
 export const redux = (
@@ -21,23 +20,15 @@ export const redux = (
     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg"
     width={48}
     height={48}
-    className="p-2 rounded-full backdrop-blur"
   />
 );
-export const rapidapi = (
-  <img
-    src={rapidapi_png}
-    width={48}
-    height={48}
-    className="p-2 rounded-full backdrop-blur"
-  />
-);
+export const rapidapi = <img src={rapidapi_png} width={48} height={48} />;
+export const vite = <img src={vite_png} width={48} height={48} />;
 export const php = (
   <img
     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
     width={48}
     height={48}
-    className="p-2 rounded-full backdrop-blur"
   />
 );
 export const mysql = (
@@ -45,7 +36,6 @@ export const mysql = (
     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg"
     width={48}
     height={48}
-    className="p-2 rounded-full backdrop-blur"
   />
 );
 export const bootstrap = (
@@ -53,23 +43,15 @@ export const bootstrap = (
     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
     width={48}
     height={48}
-    className="p-2 rounded-full backdrop-blur"
   />
 );
-export const reacttable = (
-  <p className="font-bold text-md p-2 rounded-full backdrop-blur">
-    React Table
-  </p>
-);
-export const regex = (
-  <p className="font-bold text-md p-2 rounded-full backdrop-blur">Regex</p>
-);
+export const reacttablev7 = <p className="font-bold text-md">React Table v7</p>;
+export const regex = <p className="font-bold text-md">Regex</p>;
 export const figma = (
   <img
     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
     width={48}
     height={48}
-    className="p-2 rounded-full backdrop-blur"
   />
 );
 export const materialui = (
@@ -77,6 +59,12 @@ export const materialui = (
     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg"
     width={48}
     height={48}
-    className="p-2 rounded-full backdrop-blur"
+  />
+);
+export const tailwind = (
+  <img
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
+    width={48}
+    height={48}
   />
 );

@@ -2,7 +2,7 @@ import React from 'react';
 
 const About = () => {
   const javascript = (
-    <span className="text-raisin bg-yellow-300 px-1 select-none">
+    <span className="text-raisin bg-yellow-300 px-1 select-none ">
       JavaScript
     </span>
   );
@@ -41,12 +41,15 @@ const About = () => {
   );
 
   return (
-    <div className="relative w-full flex min-h-screen bg-raisin" id="about">
+    <div
+      className="relative w-full flex flex-col min-h-screen bg-raisin"
+      id="about"
+    >
       <div className="w-full min-h-screen flex flex-col justify-center items-start gap-8 section-container animate-slideup">
-        <h1 className="font-medium text-4xl sm:text-5xl ">
+        <h1 className="font-medium text-3xl sm:text-4xl leading-normal">
           {javascript} is me. {javascript} can do {everything}.
         </h1>
-        <h1 className="font-medium text-3xl py-2 leading-10">
+        <h1 className="font-medium text-2xl py-2 leading-10">
           I mainly work with Javascript. I like Javascript because it suits my
           personality. {flexible}. I am a fast learner and not afraid to learn
           new things.
