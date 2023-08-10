@@ -6,8 +6,8 @@ import {
   About,
   Projects,
   Portfolio,
+  Skills,
   Contacts,
-  Footer,
 } from './components';
 
 const App = () => {
@@ -18,8 +18,8 @@ const App = () => {
       <About />
       <Projects />
       <Portfolio />
+      <Skills />
       <Contacts />
-      <Footer />
     </div>
   );
 };

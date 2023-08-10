@@ -5,7 +5,7 @@ import { portfolio, moon } from '../assets';
 const Portfolio = () => {
   return (
     <div className="relative w-full flex min-h-screen bg-raisin" id="project">
-      <div className="w-full min-h-screen flex flex-col justify-center my-[100px] animate-slideup ">
+      <div className="w-full min-h-screen flex flex-col justify-center  animate-slideup ">
         <div className="relative w-[150px] h-[150px] flex justify-center rounded-full section-container">
           <img
             src={moon}
@@ -64,12 +64,12 @@ const Portfolio = () => {
       </div>
 
       {/* transition */}
-      <div className="absolute top-0 z-10">
+      {/* <div className="absolute top-0 z-10">
         <div className="w-screen h-64 -bottom-[64px] py-8 bg-gradient-to-b from-flame via-flame/30"></div>
       </div>
       <div className="absolute bottom-0 z-10">
         <div className="w-screen h-64 -bottom-[64px] py-8 bg-gradient-to-t from-flame via-flame/30"></div>
-      </div>
+      </div> */}
     </div>
   );
 };

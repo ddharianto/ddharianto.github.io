@@ -1,5 +1,7 @@
 import earth from './images/earth.jpg';
 import moon from './images/moon.jpg';
+import asteroid from './images/asteroid.png';
+import asteroid_purple from './images/asteroid_purple.png';
 import jupiter from './images/jupiter.jpg';
 import mars from './images/mars.jpg';
 import neptune from './images/neptune.jpg';
@@ -13,27 +15,39 @@ import react_table from './images/react_table.png';
 
 import {
   javascript,
+  html,
+  css,
   react,
   redux,
   figma,
   materialui,
   rapidapi,
   reacttablev7,
-  php,
   regex,
-  mysql,
   bootstrap,
   tailwind,
   vite,
+  php,
+  mysql,
+  nodejs,
+  expressjs,
+  java,
+  python,
+  mongodb,
+  postman,
+  git,
+  photoshop,
+  vscode,
 } from './icons';
 
-export { moon };
+export { moon, asteroid, asteroid_purple };
 
 // export const planetary_bg = [earth, jupiter, neptune, saturn, mars, uranus];
 
 export const navbar = [
-  { title: 'about.', href: '#about' },
-  { title: 'project.', href: '#project' },
+  { title: 'home.', href: '#home' },
+  { title: 'projects.', href: '#projects' },
+  { title: 'skills.', href: '#skills' },
   // { title: 'experience.', href: '#experience' },
   { title: 'contact.', href: '#contact' },
   { title: 'resume.', href: '/resume_ddharianto.pdf', target: '_blank' },
@@ -49,7 +63,7 @@ export const projects = [
           A front-end music app using Tailwind as the main CSS styling framework and Redux for handling 
           data/state returned from API such as Shazam API from RapidAPI.
           `,
-    stack: [react, redux, rapidapi],
+    stack: [react, tailwind, redux, rapidapi],
     github: 'https://github.com/ddharianto/muzyk-app',
     demo: 'https://muzyk.netlify.app/',
   },
@@ -103,6 +117,34 @@ export const portfolio = [
     stack: [react, vite, tailwind],
     github: 'https://github.com/ddharianto/ddharianto.github.io/',
     demo: 'https://ddharianto.github.io/',
+  },
+];
+
+export const skills = [
+  {
+    name: 'Front-end development',
+    id: 'fe',
+    stack: [
+      javascript,
+      html,
+      css,
+      react,
+      redux,
+      vite,
+      tailwind,
+      materialui,
+      bootstrap,
+    ],
+  },
+  {
+    name: 'Back-end development',
+    id: 'be',
+    stack: [nodejs, expressjs, java, python, php, mysql, mongodb, postman],
+  },
+  {
+    name: 'Other skills',
+    id: 'ot',
+    stack: [git, vscode, photoshop, figma],
   },
 ];
 

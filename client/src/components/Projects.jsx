@@ -1,16 +1,16 @@
 import React, { Fragment } from 'react';
 
-import { projects, moon } from '../assets';
+import { projects, asteroid } from '../assets';
 
 const Projects = () => {
   return (
-    <div className="relative w-full flex min-h-screen bg-raisin" id="project">
-      <div className="w-full min-h-screen flex flex-col justify-center my-[100px] animate-slideup ">
-        <div className="relative w-[150px] h-[150px] flex justify-center rounded-full section-container">
+    <div className="relative w-full flex min-h-screen bg-raisin" id="projects">
+      <div className="w-full min-h-screen flex flex-col justify-center animate-slideup ">
+        <div className="relative w-[150px] h-[150px] flex justify-center section-container">
           <img
-            src={moon}
+            src={asteroid}
             alt="my project"
-            className={`absolute w-[150px] h-[150px] rounded-full group-hover/planet:invisible`}
+            className={`absolute w-[150px] h-[150px] group-hover/planet:invisible`}
           />
           <h1 className="absolute m-auto bottom-[55px] font-bold bg-black/50 p-2 rounded-full">
             My Projects
@@ -66,12 +66,12 @@ const Projects = () => {
       </div>
 
       {/* transition */}
-      <div className="absolute top-0 z-10">
+      {/* <div className="absolute top-0 z-10">
         <div className="w-screen h-64 -bottom-[64px] py-8 bg-gradient-to-b from-flame via-flame/30"></div>
       </div>
       <div className="absolute bottom-0 z-10">
         <div className="w-screen h-64 -bottom-[64px] py-8 bg-gradient-to-t from-flame via-flame/30"></div>
-      </div>
+      </div> */}
     </div>
   );
 };

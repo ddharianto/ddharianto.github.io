@@ -14,6 +14,7 @@ export default {
       },
       backgroundImage: {
         hero: "url('/src/assets/images/starry-night-sky.jpg')",
+        sun: "url('/src/assets/images/sun.png')",
       },
       keyframes: {
         bounce: {
@@ -29,8 +30,8 @@ export default {
       },
       animation: {
         ping_once: 'ping 0.5s linear',
-        bounceslow: 'bounce 6s linear infinite',
-        bounceslowdelay: 'bounce 6s 2s linear infinite',
+        bounceslow: 'bounce 5s linear infinite',
+        bounceslowdelay: 'bounce 5s 2.5s linear infinite',
         spinslow: 'spin 5s linear infinite',
         slideup: 'slideup 1s ease-in-out',
         slidedown: 'slidedown 1s ease-in-out',

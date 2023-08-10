@@ -1,9 +1,8 @@
-# Portfolio
+# Portfolio v2
 
-My personal portfolio designed in Figma and React with Material Ui
+Second iteration of my personal portfolio using Vite with React and Tailwind as CSS styling framework
 
 #
 
-Figma design: https://www.figma.com/file/wFNmjAnYvRUa7VHQjjY2uD/Portfolio-design?node-id=0%3A1&t=soALxzU5508EdEwE-1
 <br>
 Demo: https://ddharianto.github.io/
