@@ -76,7 +76,7 @@ export const projects = [
     bg: neptune,
     bg_deg: 'rotate-[30deg]',
     desc: `
-          An example of a full functioning table using React-Table v7 and styled with Material UI v5
+          An example of a full functioning table using React-Table v7 and styled with Material UI v5.
           `,
     stack: [react, materialui, reacttablev7],
     github: 'https://github.com/ddharianto/react-table',
@@ -103,7 +103,7 @@ export const portfolio = [
     bg: earth,
     bg_deg: 'rotate-[25deg]',
     desc: `
-          First iteraion of my portfolio design using CRA with React and Material UI as CSS styling framework
+          First iteraion of my portfolio design using CRA and Material UI as CSS styling framework.
           `,
     stack: [react, figma, materialui],
     github: 'https://github.com/ddharianto/ddharianto.github.io/',
@@ -115,7 +115,8 @@ export const portfolio = [
     bg: mars,
     bg_deg: 'rotate-[25deg]',
     desc: `
-          Second iteraion of my portfolio design using Vite with React and Tailwind as CSS styling framework
+          Second iteraion of my portfolio design using Vite with React and Tailwind as CSS styling framework. 
+          The main theme on this version is our solar system.
           `,
     stack: [react, vite, tailwind],
     github: 'https://github.com/ddharianto/ddharianto.github.io/',
