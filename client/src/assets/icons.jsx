@@ -1,10 +1,12 @@
 import rapidapi_png from './images/rapidapi.png';
 import vite_png from './images/vite.png';
 import postman_png from './images/postman.png';
+import instagram_png from './images/instagram.png';
 
 export const rapidapi = <img src={rapidapi_png} width={48} height={48} />;
 export const vite = <img src={vite_png} width={48} height={48} />;
 export const postman = <img src={postman_png} width={48} height={48} />;
+export const instagram = <img src={instagram_png} width={48} height={48} />;
 
 export const reacttablev7 = <p className="font-bold text-md">React Table v7</p>;
 export const regex = <p className="font-bold text-md">Regex</p>;
@@ -138,6 +140,20 @@ export const vscode = (
 export const photoshop = (
   <img
     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-line.svg"
+    width={48}
+    height={48}
+  />
+);
+export const linkedin = (
+  <img
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg"
+    width={48}
+    height={48}
+  />
+);
+export const github = (
+  <img
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
     width={48}
     height={48}
   />

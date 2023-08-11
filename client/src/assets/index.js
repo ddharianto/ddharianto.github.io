@@ -38,6 +38,9 @@ import {
   git,
   photoshop,
   vscode,
+  linkedin,
+  github,
+  instagram,
 } from './icons';
 
 export { moon, asteroid, asteroid_purple };
@@ -148,29 +151,20 @@ export const skills = [
   },
 ];
 
-export const contacts = [
+export const contact = [
   {
-    //   avatar: github,
-    name: 'github',
+    icon: github,
     label: '/ddharianto',
     src: 'https://github.com/ddharianto',
   },
   {
-    //   avatar: linkedin,
-    name: 'linkedin',
+    icon: linkedin,
     label: '/in/ddharianto/',
     src: 'https://www.linkedin.com/in/ddharianto/',
   },
   {
-    //   avatar: gmail,
-    name: 'email',
-    label: 'ddharianto11@gmail.com',
-    src: 'mailto:ddharianto11@gmail.com',
-  },
-  {
-    //   avatar: phone,
-    name: 'phone',
-    label: '(+62) 8211 4239 288',
-    src: 'tel:+6282114239288',
+    icon: instagram,
+    label: '/ddharianto',
+    src: 'https://www.instagram.com/ddharianto/',
   },
 ];

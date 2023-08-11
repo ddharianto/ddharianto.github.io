@@ -7,7 +7,7 @@ const About = () => {
     </span>
   );
   const everything = (
-    <span className="font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-[#FF288C] from-20% via-[#3526fd] to-[#06ff9f]">
+    <span className="font-extrabold underline decoration-flame text-transparent bg-clip-text bg-gradient-to-br from-[#FF288C] from-20% via-[#3526fd] to-[#06ff9f]">
       everything
     </span>
   );

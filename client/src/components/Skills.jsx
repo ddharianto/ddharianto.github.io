@@ -16,18 +16,24 @@ const Skills = () => {
             className={`absolute w-[150px] h-[150px] group-hover/planet:invisible`}
           />
           <h1 className="absolute m-auto bottom-[55px] font-bold tracking-widest bg-black/50 p-2 rounded-full">
-            Skills
+            My Skills
           </h1>
         </div>
         <div className="flex flex-col justify-center items-center section-container gap-8">
           {skills.map((skill) => (
-            <div className="flex flex-col justify-center items-center gap-4">
+            <div
+              key={skill.name}
+              className="flex flex-col justify-center items-center gap-4"
+            >
               <h1 className="font-medium text-2xl py-2 leading-10">
                 {skill.name}
               </h1>
               <div className="flex flex-wrap justify-center gap-5">
-                {skill.stack.map((tech) => (
-                  <div className="relative w-[80px] h-[80px] flex justify-center odd:animate-bounceslow even:animate-bounceslowdelay">
+                {skill.stack.map((tech, i) => (
+                  <div
+                    key={i}
+                    className="relative w-[80px] h-[80px] flex justify-center odd:animate-bounceslow even:animate-bounceslowdelay"
+                  >
                     <img
                       src={
                         skill.id !== 'ot'
