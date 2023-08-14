@@ -66,10 +66,10 @@ const Portfolio = () => {
       {/* transition */}
       {/* <div className="absolute top-0 z-10">
         <div className="w-screen h-64 -bottom-[64px] py-8 bg-gradient-to-b from-flame via-flame/30"></div>
-      </div>
+      </div> */}
       <div className="absolute bottom-0 z-10">
         <div className="w-screen h-64 -bottom-[64px] py-8 bg-gradient-to-t from-flame via-flame/30"></div>
-      </div> */}
+      </div>
     </div>
   );
 };

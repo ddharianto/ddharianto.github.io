@@ -8,8 +8,10 @@ const Footer = () => {
       <a href="#home" className=" py-1 underline decoration-flame">
         ddharianto.
       </a>{' '}
-      <span className="font-normal text-[15px]">
-        | Every vector used in this portfolio is created by{' '}
+      |
+      <span className="font-thin text-[15px]">
+        {' '}
+        Every vector used in this portfolio is created by{' '}
         <a
           href="https://www.freepik.com/"
           title="Freepik"

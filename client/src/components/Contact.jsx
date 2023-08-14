@@ -14,7 +14,7 @@ const Contact = () => {
           <div className="absolute inset-x-0 bottom-0 flex flex-col justify-center items-center mb-10 section-container gap-10">
             <div className="flex flex-col gap-8">
               <h1 className="font-bold font-serif text-3xl sm:text-4xl leading-normal">
-                <span className="bg-white text-raisin py-2 ">
+                <span className="bg-white text-raisin py-2">
                   Let's{' '}
                   <span className="underline decoration-flame">
                     colaborate.
