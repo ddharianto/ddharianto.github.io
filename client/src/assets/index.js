@@ -45,8 +45,6 @@ import {
 
 export { moon, asteroid, asteroid_purple };
 
-// export const planetary_bg = [earth, jupiter, neptune, saturn, mars, uranus];
-
 export const navbar = [
   { title: 'home.', href: '#home' },
   { title: 'projects.', href: '#projects' },
@@ -67,7 +65,6 @@ export const projects = [
           data/state returned from API such as Shazam API from RapidAPI.
           `,
     stack: [react, tailwind, redux, rapidapi],
-    github: 'https://github.com/ddharianto/muzyk-app',
     demo: 'https://muzyk.netlify.app/',
   },
   {
@@ -79,7 +76,6 @@ export const projects = [
           An example of a full functioning table using React-Table v7 and styled with Material UI v5.
           `,
     stack: [react, materialui, reacttablev7],
-    github: 'https://github.com/ddharianto/react-table',
     demo: 'https://ddharianto.github.io/react-table/',
   },
   {
@@ -92,7 +88,7 @@ export const projects = [
             The login, registration and change password forms use regex so that users can submit entries that are adjusted by the system.
             `,
     stack: [php, regex, mysql, bootstrap],
-    github: 'https://github.com/ddharianto/login-form-with-regex',
+    demo: 'https://github.com/ddharianto/login-form-with-regex',
   },
 ];
 
@@ -106,8 +102,7 @@ export const portfolio = [
           First iteraion of my portfolio design using CRA and Material UI as CSS styling framework.
           `,
     stack: [react, figma, materialui],
-    github: 'https://github.com/ddharianto/ddharianto.github.io/',
-    demo: 'https://ddharianto.github.io/',
+    demo: 'https://github.com/ddharianto/ddharianto.github.io/tree/v1.0',
   },
   {
     name: 'Portfolio v2 (Current)',
@@ -119,7 +114,6 @@ export const portfolio = [
           The main theme on this version is our solar system.
           `,
     stack: [react, vite, tailwind],
-    github: 'https://github.com/ddharianto/ddharianto.github.io/',
     demo: 'https://ddharianto.github.io/',
   },
 ];

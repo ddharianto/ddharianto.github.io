@@ -37,7 +37,7 @@ const Portfolio = () => {
                   </h1>
                 </div>
                 <a
-                  href={el?.demo !== undefined ? el.demo : el.github}
+                  href={el?.demo}
                   target="_blank"
                   className="absolute z-10 bottom-1 flex justify-center rounded-b-full rounded-t-[200px] opacity-50 hover:opacity-100 peer/img"
                 >
