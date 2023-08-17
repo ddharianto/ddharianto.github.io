@@ -32,7 +32,7 @@ const Portfolio = () => {
                   <h1 className="max-w-[300px] text-xl md:text-2xl font-bold tracking-widest mb-4">
                     {el.name}
                   </h1>
-                  <h1 className="text-lg leading-tight line-clamp-4 md:line-clamp-5">
+                  <h1 className="text-lg leading-tight line-clamp-3 md:line-clamp-5">
                     {el.desc}
                   </h1>
                 </div>
