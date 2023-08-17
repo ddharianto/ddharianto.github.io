@@ -12,7 +12,7 @@ import {
 
 const App = () => {
   return (
-    <div className="flex-col flex">
+    <div className="flex flex-col">
       <Navbar />
       <Hero />
       <About />

@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <div className="font-bold text-lg leading-normal">
+    <div className="font-bold text-lg text-center leading-normal">
       Designed and developed with{' '}
       <span className="hover:animate-ping_once">⭐</span> by{' '}
       <a href="#home" className=" py-1 underline decoration-flame">

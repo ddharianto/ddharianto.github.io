@@ -4,9 +4,9 @@ import { portfolio, moon } from '../assets';
 
 const Portfolio = () => {
   return (
-    <div className="relative w-full flex min-h-screen bg-raisin" id="project">
-      <div className="w-full min-h-screen flex flex-col justify-center  animate-slideup ">
-        <div className="relative w-[150px] h-[150px] flex justify-center rounded-full section-container">
+    <div className="relative min-w-[550px] w-full flex bg-raisin" id="project">
+      <div className="w-full min-h-screen flex flex-col justify-around animate-slideup">
+        <div className="relative w-[150px] h-[150px] flex justify-center rounded-full section-container my-[65px]">
           <img
             src={moon}
             alt="my project"
@@ -20,24 +20,26 @@ const Portfolio = () => {
           {portfolio.map((el) => (
             <div
               key={el.name}
-              className="h-[500px] flex felx-col rounded-full my-20 mx-6 odd:animate-bounceslow even:animate-bounceslowdelay group/planet"
+              className="h-[400px] md:h-[500px] flex felx-col rounded-full my-20 mx-6 odd:animate-bounceslow even:animate-bounceslowdelay group/planet"
             >
-              <div className="relative w-[500px] h-[500px] flex justify-center rounded-full ">
+              <div className="relative w-[400px] md:w-[500px] h-[400px] md:h-[500px] flex justify-center rounded-full ">
                 <img
                   src={el?.bg}
                   alt=""
                   className={`absolute z-50 w-full h-full rounded-full ${el.bg_deg} group-hover/planet:invisible`}
                 />
-                <div className="z-10 flex flex-col mt-10 max-w-[450px] items-center text-center font-mono p-4">
-                  <h1 className="max-w-[300px] text-2xl font-bold tracking-widest mb-4">
+                <div className="z-10 flex flex-col mt-10 max-w-[380px] md:max-w-[450px] items-center text-center font-mono p-4">
+                  <h1 className="max-w-[300px] text-xl md:text-2xl font-bold tracking-widest mb-4">
                     {el.name}
                   </h1>
-                  <h1 className="text-lg leading-tight">{el.desc}</h1>
+                  <h1 className="text-lg leading-tight line-clamp-4 md:line-clamp-5">
+                    {el.desc}
+                  </h1>
                 </div>
                 <a
                   href={el?.demo !== undefined ? el.demo : el.github}
                   target="_blank"
-                  className="absolute z-10 bottom-1 flex justify-center opacity-50 hover:opacity-100 peer/img"
+                  className="absolute z-10 bottom-1 flex justify-center rounded-b-full rounded-t-[200px] opacity-50 hover:opacity-100 peer/img"
                 >
                   <img
                     src={el.image}
@@ -45,7 +47,7 @@ const Portfolio = () => {
                     className="w-[98%] h-auto rounded-b-full rounded-t-[200px]"
                   />
                 </a>
-                <div className="absolute z-10 m-auto bottom-[50px] max-w-[200px] flex flex-wrap justify-center items-center gap-4 peer-hover/img:invisible">
+                <div className="absolute z-10 m-auto bottom-[25px] md:bottom-[50px] max-w-[200px] flex flex-wrap justify-center items-center gap-4 peer-hover/img:invisible">
                   {el.stack.map((tech, i) => (
                     <div key={i} className="p-2 bg-orange-500 rounded-full">
                       {tech}
@@ -54,7 +56,7 @@ const Portfolio = () => {
                 </div>
 
                 {/* background */}
-                <div className="absolute invisible z-0 group-hover/planet:visible m-auto top-0 bottom-0 left-0 right-0 w-[500px] h-[500px] bg-orange-700 rounded-full" />
+                <div className="absolute invisible z-0 group-hover/planet:visible m-auto top-0 bottom-0 left-0 right-0 w-[400px] h-[400px] bg-orange-700 rounded-full" />
                 <div className="absolute invisible z-0 group-hover/planet:visible m-auto top-0 bottom-0 left-0 right-0 w-[300px] h-[300px] bg-orange-500 rounded-full" />
                 <div className="absolute invisible z-0 group-hover/planet:visible m-auto top-0 bottom-0 left-0 right-0 w-[150px] h-[150px] bg-yellow-500 rounded-full" />
               </div>
@@ -68,7 +70,7 @@ const Portfolio = () => {
         <div className="w-screen h-64 -bottom-[64px] py-8 bg-gradient-to-b from-flame via-flame/30"></div>
       </div> */}
       <div className="absolute bottom-0 z-10">
-        <div className="w-screen h-64 -bottom-[64px] py-8 bg-gradient-to-t from-flame via-flame/30"></div>
+        <div className="min-w-[550px] w-screen h-64 -bottom-[64px] py-8 bg-gradient-to-t from-flame via-flame/30"></div>
       </div>
     </div>
   );

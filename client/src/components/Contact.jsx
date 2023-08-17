@@ -6,11 +6,11 @@ import { contact } from '../assets/';
 const Contact = () => {
   return (
     <div
-      className="relative w-full flex flex-col min-h-screen bg-raisin"
+      className="relative min-w-[550px] w-full flex flex-col min-h-screen bg-raisin"
       id="contact"
     >
       <div className="relative w-full min-h-screen flex flex-col justify-center animate-slideup section-container">
-        <div className="absolute inset-x-0 bottom-0 w-full max-h-[600px] h-full flex flex-col bg-sun bg-cover bg-no-repeat">
+        <div className="absolute inset-x-0 bottom-0 w-full max-h-[600px] h-full flex flex-col bg-sun bg-cover bg-center md:bg-top bg-no-repeat">
           <div className="absolute inset-x-0 bottom-0 flex flex-col justify-center items-center mb-10 section-container gap-10">
             <div className="flex flex-col gap-8">
               <h1 className="font-bold font-serif text-3xl sm:text-4xl leading-normal">
@@ -61,7 +61,7 @@ const Contact = () => {
 
       {/* transition */}
       <div className="absolute top-0 z-10">
-        <div className="w-screen h-64 -bottom-[64px] py-8 bg-gradient-to-b from-flame via-flame/30"></div>
+        <div className="min-w-[550px] w-screen h-64 -bottom-[64px] py-8 bg-gradient-to-b from-flame via-flame/30"></div>
       </div>
       {/* <div className="absolute bottom-0 z-10">
         <div className="w-screen h-64 -bottom-[64px] py-8 bg-gradient-to-t from-flame via-flame/30"></div>

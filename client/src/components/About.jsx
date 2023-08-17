@@ -42,14 +42,14 @@ const About = () => {
 
   return (
     <div
-      className="relative w-full flex flex-col min-h-screen bg-raisin"
+      className="relative min-w-[550px] w-full flex flex-col min-h-screen bg-raisin"
       id="about"
     >
       <div className="w-full min-h-screen flex flex-col justify-center items-start gap-8 section-container animate-slideup">
-        <h1 className="font-medium text-3xl sm:text-4xl leading-normal">
+        <h1 className="font-medium text-3xl sm:text-4xl leading-normal text-center md:text-left select-none">
           {javascript} is me. {javascript} can do {everything}.
         </h1>
-        <h1 className="font-medium text-2xl py-2 leading-10">
+        <h1 className="font-medium text-2xl py-2 leading-10 text-center md:text-left select-none">
           I mainly work with Javascript. I like Javascript because it suits my
           personality. {flexible}. I am a fast learner and not afraid to learn
           new things.
@@ -58,7 +58,7 @@ const About = () => {
 
       {/* transition */}
       <div className="absolute top-0 z-10">
-        <div className="w-screen h-64 -bottom-[64px] py-8 bg-gradient-to-b from-primary"></div>
+        <div className="min-w-[550px] w-screen h-64 -bottom-[64px] py-8 bg-gradient-to-b from-primary"></div>
       </div>
       {/* <div className="absolute bottom-0 z-10">
         <div className="w-screen h-64 -bottom-[64px] py-8 bg-gradient-to-t from-flame via-flame/30"></div>

@@ -23,19 +23,19 @@ const Hero = () => {
 
   return (
     <div
-      className="relative w-full flex flex-col min-h-screen mb-2 bg-hero bg-cover bg-no-repeat bg-left"
+      className="relative min-w-[550px] w-full flex flex-col min-h-screen mb-2 bg-hero bg-cover bg-no-repeat bg-left"
       id="home"
     >
-      <div className="flex flex-col justify-center items-center min-h-screen gap-2 section-container">
+      <div className="flex flex-col justify-center items-center min-h-screen gap-2 section-container select-none">
         <span className="text-5xl font-bold">Dede Harianto</span>
-        <p className="text-3xl font-semibold">
+        <p className="text-2xl font-semibold">
           <span ref={spanRef} />
         </p>
       </div>
 
       {/* transition */}
       <div className="absolute bottom-0 z-10">
-        <div className="w-screen h-64 -bottom-[64px] py-8 bg-gradient-to-t from-primary"></div>
+        <div className="min-w-[550px] w-screen h-64 -bottom-[64px] py-8 bg-gradient-to-t from-primary"></div>
       </div>
     </div>
   );

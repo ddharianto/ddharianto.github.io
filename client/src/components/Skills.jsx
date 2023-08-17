@@ -5,11 +5,11 @@ import { skills, asteroid, asteroid_purple } from '../assets';
 const Skills = () => {
   return (
     <div
-      className="relative w-full flex flex-col min-h-screen bg-raisin"
+      className="relative min-w-[550px] w-full flex flex-col min-h-screen bg-raisin"
       id="skills"
     >
-      <div className="w-full min-h-screen flex flex-col justify-start animate-slideup ">
-        <div className="relative w-[150px] h-[150px] flex justify-center section-container mt-5 mb-[60px]">
+      <div className="w-full min-h-screen flex flex-col justify-start animate-slideup mb-[100px]">
+        <div className="relative w-[150px] h-[150px] flex justify-center section-container my-[65px]">
           <img
             src={asteroid_purple}
             alt="skills"
