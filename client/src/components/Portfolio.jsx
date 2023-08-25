@@ -56,7 +56,7 @@ const Portfolio = () => {
                 </div>
 
                 {/* background */}
-                <div className="absolute invisible z-0 group-hover/planet:visible m-auto top-0 bottom-0 left-0 right-0 w-[400px] h-[400px] bg-orange-700 rounded-full" />
+                <div className="absolute invisible z-0 group-hover/planet:visible m-auto top-0 bottom-0 left-0 right-0 w-[400px] md:w-[500px] h-[400px] md:h-[500px] bg-orange-700 rounded-full" />
                 <div className="absolute invisible z-0 group-hover/planet:visible m-auto top-0 bottom-0 left-0 right-0 w-[300px] h-[300px] bg-orange-500 rounded-full" />
                 <div className="absolute invisible z-0 group-hover/planet:visible m-auto top-0 bottom-0 left-0 right-0 w-[150px] h-[150px] bg-yellow-500 rounded-full" />
               </div>

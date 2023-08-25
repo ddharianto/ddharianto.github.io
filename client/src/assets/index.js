@@ -92,7 +92,7 @@ export const projects = [
     demo: 'https://github.com/ddharianto/login-form-with-regex',
   },
   {
-    name: 'Coming Soon!',
+    name: 'Next.js Project (Coming Soon!)',
     image: '',
     bg: saturn,
     bg_deg: 'rotate-[26deg]',
