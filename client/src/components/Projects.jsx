@@ -41,11 +41,15 @@ const Projects = () => {
                   target="_blank"
                   className="absolute z-10 bottom-1 flex justify-center rounded-b-full rounded-t-[200px] opacity-50 hover:opacity-100 peer/img"
                 >
-                  <img
-                    src={el.image}
-                    alt={el.name}
-                    className="w-[98%] h-auto rounded-b-full rounded-t-[200px]"
-                  />
+                  {el.image !== '' ? (
+                    <img
+                      src={el.image}
+                      alt={el.name}
+                      className="w-[98%] h-auto rounded-b-full rounded-t-[200px]"
+                    />
+                  ) : (
+                    <></>
+                  )}
                 </a>
                 <div className="absolute z-10 m-auto bottom-[25px] md:bottom-[50px] max-w-[200px] flex flex-wrap justify-center items-center gap-4 peer-hover/img:invisible">
                   {el.stack.map((tech, i) => (

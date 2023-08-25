@@ -18,6 +18,7 @@ import {
   html,
   css,
   react,
+  nextjs,
   redux,
   figma,
   materialui,
@@ -89,6 +90,17 @@ export const projects = [
             `,
     stack: [php, regex, mysql, bootstrap],
     demo: 'https://github.com/ddharianto/login-form-with-regex',
+  },
+  {
+    name: 'Coming Soon!',
+    image: '',
+    bg: saturn,
+    bg_deg: 'rotate-[26deg]',
+    desc: `
+            I would like to try my knowledge and build a project with Next.js.
+            `,
+    stack: [nextjs],
+    demo: '#',
   },
 ];
 

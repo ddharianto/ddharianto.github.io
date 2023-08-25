@@ -39,6 +39,13 @@ export const react = (
     height={48}
   />
 );
+export const nextjs = (
+  <img
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
+    width={48}
+    height={48}
+  />
+);
 export const redux = (
   <img
     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg"
