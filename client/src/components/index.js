@@ -7,6 +7,7 @@ import Experiences from './Experience';
 import Skills from './Skills';
 import Contacts from './Contact';
 import Footer from './Footer';
+import Loader from './Loader';
 
 export {
   Navbar,
@@ -18,4 +19,5 @@ export {
   Skills,
   Contacts,
   Footer,
+  Loader,
 };

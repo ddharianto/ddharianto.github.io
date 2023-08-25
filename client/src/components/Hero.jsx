@@ -23,7 +23,7 @@ const Hero = () => {
 
   return (
     <div
-      className="relative min-w-[550px] w-full flex flex-col min-h-screen mb-2 bg-hero bg-cover bg-no-repeat bg-left"
+      className="relative min-w-[550px] w-full flex flex-col min-h-screen bg-hero bg-cover bg-no-repeat bg-left"
       id="home"
     >
       <div className="flex flex-col justify-center items-center min-h-screen gap-2 section-container select-none">

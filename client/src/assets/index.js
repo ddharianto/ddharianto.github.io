@@ -1,5 +1,6 @@
 import earth from './images/earth.jpg';
 import moon from './images/moon.jpg';
+import sun from './images/sun-full.png';
 import asteroid from './images/asteroid.png';
 import asteroid_purple from './images/asteroid_purple.png';
 import jupiter from './images/jupiter.jpg';
@@ -44,7 +45,7 @@ import {
   instagram,
 } from './icons';
 
-export { moon, asteroid, asteroid_purple };
+export { sun, moon, asteroid, asteroid_purple };
 
 export const navbar = [
   { title: 'home.', href: '#home' },

@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  @apply bg-primary text-white overflow-x-hidden;
+  @apply bg-raisin text-white overflow-x-hidden;
 }
 
 .section-container {
